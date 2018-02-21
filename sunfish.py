@@ -404,7 +404,7 @@ def print_pos(pos):
     if board.startswith('\n'):
         board = board[::-1].swapcase()
     print()
-    esc = ('\033[;41m','\033[0m') # ansi esc (background red, normal)
+    esc = ('\033[;40m','\033[0m') # ansi esc (background black, normal)
     uni_pieces = {
         'R':'♜', 'N':'♞', 'B':'♝', 'Q':'♛', 'K':'♚', 'P':'♟',
         'r':'♖', 'n':'♘', 'b':'♗', 'q':'♕', 'k':'♔', 'p':'♙', '.':' '}
